@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="keba_kecontact",
+    name="keba-kecontact-spali",
     version="3.0.3",
     author="Philipp Danner",
     author_email="philipp@danner-web.de",
