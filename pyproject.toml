@@ -1,5 +1,5 @@
 [project]
-name = "keba_kecontact"
+name = "keba-kecontact-spali"
 dynamic = ["version"]
 authors = [{ name = "Philipp Danner", email = "philipp@danner-web.de" }]
 description = "A python library to communicate with the KEBA charging stations via udp"
@@ -21,6 +21,10 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "keba_kecontact/__init__.py"
+
+# fork: the distribution name differs from the package directory
+[tool.hatch.build.targets.wheel]
+packages = ["keba_kecontact"]
 
 [tool.ruff]
 fix = true
